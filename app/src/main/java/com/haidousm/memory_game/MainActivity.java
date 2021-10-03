@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void shuffleCards() {
 
-        toggleInteraction(true);
+        toggleInteraction(false);
         score = 0;
         scoreCounter.setText(String.valueOf(score));
         playAgainButton.setVisibility(View.INVISIBLE);
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             animateShuffling(card);
 
         }
+        toggleInteraction(true);
 
 
     }
