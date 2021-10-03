@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/play_again_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="shuffleCardsWrapper"
+        android:text="Play Again"
+        android:textColor="#BE1B63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:columnCount="3"
+        app:columnOrderPreserved="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageButton
+            android:id="@+id/card_0"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/square"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/triangle"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_3"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <TextView
+            android:id="@+id/score_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp"
+            app:layout_gravity="center|center_horizontal|center_vertical" />
+
+        <ImageButton
+            android:id="@+id/card_4"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/triangle"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_6"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+        <ImageButton
+            android:id="@+id/card_7"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/todo"
+            android:onClick="cardClicked" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
