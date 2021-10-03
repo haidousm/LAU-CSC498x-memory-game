@@ -134,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     scoreCounter.setText(String.valueOf(score));
                     if(score == numberOfCards / 2){
                         playAgainButton.setVisibility(View.VISIBLE);
+                        playSoundFX(R.raw.win_game_fx);
                     }
 
                 } else {
